@@ -1,0 +1,148 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Sofia&display=swap');
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Lato', sans-serif;
+}
+
+
+.container{
+    width: 90%;
+    margin: 0 auto;
+    margin-top: 50px;
+}
+
+.books-icon{
+    position: absolute;
+    top: 5%;
+    right: 20%;
+    width: 250px;
+    filter: invert(60%);
+  
+}
+
+h1{
+    font-size: 40px;
+    font-family: 'Sofia', cursive;
+    margin-bottom: 20px;
+    color: rgb(5, 163, 137);
+}
+
+.inputs{
+    width: 600px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    border-radius: 5px;
+    box-shadow: 0 0 3px rgba(0,0,0,0.3);
+    padding: 20px;
+    margin-bottom: 30px;
+}
+
+.input{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 10px;
+    box-shadow: 0 0 3px rgba(0,0,0,0.3);
+}
+
+.inputs label{
+    width: 100px;
+    text-align: center;
+}
+
+input{
+    padding: 5px 15px;
+    width: 400px;
+    border: none;
+}
+
+input:focus{
+    outline-color: #9a9a9a;
+}
+
+button{
+    padding: 10px 20px;
+    background: rgb(5, 163, 137);
+    border: none;
+    border-radius: 5px;
+    color: #fff;
+    cursor: pointer;
+    transition: 0.2s ease;
+}
+
+button:active{
+    transform: scale(0.9);
+}
+
+hr{
+    margin-bottom: 30px;
+}
+
+h2{
+    color: rgb(5, 163, 76);
+    margin-bottom: 20px;
+    font-family: 'Sofia', cursive;
+}
+
+.books{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 20px;
+}
+
+.book{
+    max-width: 350px;
+    border-radius: 5px;
+    box-shadow: 0 0 3px rgba(0,0,0,0.3);
+    padding: 20px;
+    border-bottom: 5px solid rgb(34, 163, 214);
+    position: relative;
+}
+
+.status{
+    display: flex;
+    justify-content: end;
+}
+
+select{
+    padding: 5px 10px;
+    border-radius: 5px;
+    background: #fff;
+    color: rgb(5, 163, 137);
+}
+
+h3{
+    color: #9a9a9a;
+    margin-bottom: 20px;
+}
+
+h3 span{
+    color: #333;
+}
+
+#delete{
+    margin-bottom: 20px;
+}
+
+.error, .success{
+    color: #fff;
+    padding: 10px;
+    text-align: center;
+    font-size: 26px;
+    position: absolute;
+    bottom: 92%;
+    left: 20%;
+}
+
+.error{
+    background: red;
+}
+
+.success{
+    background: green;
+}
